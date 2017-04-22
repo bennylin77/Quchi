@@ -1,0 +1,359 @@
+/*====================INDEX SLOGAN==========================*/
+.project_begin{
+	position: relative;
+	background: #ffffff;
+	height: 100vh;
+	color: #000000;
+}
+.project_begin_ch{
+	position: absolute;
+	top: 30px;
+	font-size: 80px;
+	width: 80px;
+}
+.project_begin_en{
+	position: absolute;
+	top: 280px;
+	left: 130px;
+	color: #888888;
+	font-size: 40px;
+	font-family: Arial;
+}
+.project_begin_quote{
+	position: absolute;
+	top: 550px;	
+	right: 0px;
+	font-size: 19.5px;
+	letter-spacing: 2.5px;
+	color: #000000;
+	width: 580px;
+}
+.project_begin_title{
+	position: absolute;
+	top: 650px;		
+	right: 0px;
+	font-size: 19.5px;
+	font-weight: bold;
+}
+.project_begin_arrow{
+	position: absolute;
+	top: 720px;	
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;	
+}
+
+.project_begin_block{
+	position: absolute;
+	width: 20px;
+	height: 20px;	
+	top: 500px;
+	right: 50px;
+}
+#project_begin_block_1{
+	margin-right: 30px;
+	background:  rgb(0, 210, 173);
+}
+#project_begin_block_2{
+	margin-right: -30px;
+	background:  rgb(228, 159, 71);	
+}
+#project_begin_block_3{
+	margin-right: 10px;
+	background:  rgb(213, 241, 138);
+}
+#project_begin_block_4{
+	margin-right: -50px;
+	background:  rgb(218, 89, 22);
+}
+#project_begin_block_5{
+	margin-right: -10px;
+	background:  rgb(237, 205, 155);	
+}
+
+
+/*====================INDEX VIDEO==========================*/
+* { box-sizing: border-box; }
+.video-background {
+  position: relative;
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  z-index: -99;
+  overflow:hidden;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+
+/*====================INDEX RESOURCES==========================*/
+.project_resource{
+	position: relative;
+	background: #ffffff;
+	height: 100vh;
+	color: #000000;
+}
+.project_resource_ch{
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+.project_resource_en{
+	font-family: 'Arial';
+	letter-spacing: 1px;
+}
+.carousel-inner .item {
+    width: 100%; /*slider width*/
+    font-size: 25px;
+    height: 600px;
+}
+.project_resource_slider_large_title{
+	font-family: 'Arial';  
+  	font-size: 160px;
+ 	text-align: center;
+  	margin: 0px auto;
+  	height: 170px;
+  	line-height: 170px;
+  	width: 100%; 
+  	letter-spacing: 12px;
+}
+.project_resource_slider_small_title{
+	font-family: 'Arial';	
+  	font-size: 18px;
+  	text-align: center;
+  	margin: 0px auto;
+ 	height: 20px;
+  	line-height: 20px;
+ 	width: 100%;	
+ 	letter-spacing: 12px;
+}
+.project_resource_app{
+	width: 80px;
+	margin: 15px 9px;
+}
+.project_resource_hardware{
+	font-size: 18px;
+	letter-spacing: 5px;
+	margin-top: 10px
+}
+.project_resource_s_title{
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 6px;
+    text-align: center;
+    display: table;
+    white-space: nowrap;
+    &:before, &:after {
+      border-top: 4px solid #ffffff;
+      content: '';
+      display: table-cell;
+      position: relative;
+      top: 0.6em;
+      width: 45%;
+    }
+    &:before { right: 1.5%; }
+    &:after { left: 1.5%; }
+}
+
+
+
+
+
+.project_resource_block{
+	position: absolute;
+	width: 30px;
+	height: 10px;	
+	left: 50%;
+}
+#project_resource_block_1{
+	margin-left: -75px;
+	background:  rgb(0, 210, 173);
+}
+#project_resource_block_3{
+	margin-left: -45px;
+	background:  rgb(213, 241, 138);
+}
+#project_resource_block_5{
+	margin-left: -15px;
+	background:  rgb(237, 205, 155);	
+}
+#project_resource_block_2{
+	margin-left: 15px;
+	background:  rgb(228, 159, 71);	
+}
+#project_resource_block_4{
+	margin-left: 45px;
+	background:  rgb(218, 89, 22);
+}
+
+
+
+
+
+
+
+
+/*===============================carousel============================*/
+.carousel{
+  color: #ffffff;
+}
+.carousel-indicators li{
+  border: 1px solid #333;
+}
+.carousel-indicators li.active{
+  background: #333;
+}
+
+
+@media (max-width: 480px) {
+.carousel-inner .item {
+    width: 100%; /*slider width*/
+    font-size: 25px;
+    height: 660px;
+}
+}
+.carousel-content{
+  /*
+  position: absolute;
+  left: 20%;
+  right: 20%;*/
+}
+
+
+.carousel-indicators li.active{
+  border-color: rgba(56, 90, 173, 0.8);
+  background: rgba(56, 90, 173, 0.8);
+}
+.carousel-indicators li{
+  border-color: rgba(56, 90, 173, 0.8);
+}
+.carousel-control {
+    z-index: 10;
+    top: 2%;
+    width: 30px; // no more gray thing
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-shadow: none;
+    color: #333;
+}
+.carousel-control.left,
+.carousel-control.right { background: none; }
+.carousel-control.left span,
+.carousel-control.right span{ font-size: 15px !important; color: #000000;}
+
+.carousel-control.left:hover,
+.carousel-control.right:hover,
+.carousel-control.left:focus,
+.carousel-control.right:focus
+ { color: #333;}
+// change it according to your needs
+.carousel-control.left { left: -30px; }
+.carousel-control.right { right: -30px; }
+
+/*===============================quchi============================*/
+.project_quchi{	
+	position: relative;
+}
+.project_quchi_layer{
+	position: absolute;		
+	top: 20vh;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	height: 400px;
+	color: #ffffff;
+	border-radius: 10px;
+}
+.project_quchi_container{
+	font-family: 'Arial';
+	margin-top: 100px; 
+}
+.project_quchi_l{
+	line-height: 1.1;
+	font-size: 140px;
+}
+.project_quchi_s{
+	font-size: 40px;
+	letter-spacing: 5px;	
+}
+.project_quchi_ch{
+	font-size: 40px;
+	letter-spacing: 10px;		
+}
+.project_quchi_q{
+	background: rgba(218, 89, 22, .8);	
+}
+.project_quchi_u{
+	background: rgba(228, 159, 71, .8);		
+}
+.project_quchi_c{
+	background: rgba(237, 205, 155, .8);		
+}
+.project_quchi_h{
+	background: rgba(213, 241, 138, .8);		
+}
+.project_quchi_i{
+	background: rgba(0, 210, 173, .8);		
+}
+
+.project_quchi_content_container{
+	position: relative;
+	background: #ffffff;
+	height: 700px;
+	color: #000000;
+	margin-top: 50px;
+}
+
+
+
+.project_quchi_image {
+  	-webkit-filter: sepia(0.4) saturate(1.5) contrast(0.9) brightness(1.1) hue-rotate(-15deg);
+  	filter: sepia(0.4) saturate(1.5) contrast(0.9) brightness(1.1) hue-rotate(-15deg);   
+    height: 300px;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+.project_quchi_content_sub_title{
+	padding-left: 20px;
+	font-size: 30px;	
+	letter-spacing: 5px;
+	margin-top: 40px;	
+}
+.project_quchi_content_sub_content{
+	padding-left: 20px;
+	padding-right: 20px;
+	letter-spacing: 2px;
+	font-size: 18px;
+}

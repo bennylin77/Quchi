@@ -1,0 +1,81 @@
+//===============================organization============================//
+.index_organization_section{
+  position: relative;
+  padding: 60px 0px;  
+  color: #000000;
+  font-weight: bold;
+}
+.organization_manager_container{
+  font-size: 26px;
+}
+.organization_manager_ch{
+  font-size: 100%; 
+  letter-spacing: 5px;  
+}
+.organization_manager_en{
+  font-size: 50% 
+}
+.vertical_ball_line, .ball_line, .ball_line_1, .ball_line_5,
+.horizontal_ball_line_1, .horizontal_ball_line_2,
+.horizontal_ball_line_3, .horizontal_ball_line_4,
+.horizontal_ball_line_5, .horizontal_ball_line_6{
+  position: relative;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+  background-color: #000000;
+}
+.horizontal_ball_line_1, .horizontal_ball_line_2,
+.horizontal_ball_line_3, .horizontal_ball_line_4,
+.horizontal_ball_line_5, .horizontal_ball_line_6 {
+  position: absolute;
+}
+.vertical_ball_line{
+  left: 50%;
+  top: 0;
+  height: 50px;
+  width: 1px;
+}
+.horizontal_ball_line_1, .horizontal_ball_line_3, .horizontal_ball_line_5{
+  bottom: 0;
+  right: 0;
+  height: 1px;  
+}
+.horizontal_ball_line_2, .horizontal_ball_line_4, .horizontal_ball_line_6{
+  bottom: 0;
+  left: 1px;
+  height: 1px;  
+}
+.ball_line{
+  left: 50%;
+  top: 0;
+  width: 1px;
+}
+.ball_line_1{
+  left: 50%;
+  top: 0;
+  width: 1px;	
+}
+.ball_line_5{
+  left: 50%;
+  top: 0;
+  width: 1px;		
+}
+.organization_balls{
+  visibility: hidden;
+  font-size: 16px;  
+  margin: 20px auto;
+  width: 260px; 
+}
+.organization_balls_border{
+  text-align: left;	
+  border: 1px solid #da5916; 
+  padding: 7px; 	
+}
+.organization_balls_position{
+  letter-spacing: 4px;  
+  font-size: 20px;	
+}
+.organization_balls_position_en{
+  font-size: 13px;
+}

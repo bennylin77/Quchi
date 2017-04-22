@@ -1,0 +1,26 @@
+<section class="index_c index_color">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative;">
+				<div class="capital_quchi capital_quchi_c">C</div>
+				<div class="wrapper_quchi">
+					<div class="content_quchi" id="content_quchi_3">REATORS</div>
+					<div class="ch_quchi" id="ch_quchi_3">創造者</div>
+				</div>	
+				<div class="details_quchi" id="details_quchi_3">
+					分組合作、邏輯判斷、程式設計
+				</div>	
+			</div>
+		</div>
+	</div>
+</section>	
+<script>
+	var tween = new TimelineMax()	
+		.to("#content_quchi_3", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_c')
+		.to("#ch_quchi_3", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_c')
+		.to("#details_quchi_3", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_c')
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_c", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);		
+</script>

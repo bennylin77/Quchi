@@ -1,0 +1,38 @@
+<section class="index_slogan" id="index_slogan">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10 text-center" style="position: relative;">					
+				<img src="/images/slogan/island.svg" class="index_slogan_image">
+				<div class="index_slogan_content">&quot;我們要帶著孩子打造一個渡假島&quot;</div>
+				<div class="index_slogan_subscript">一個讓創意與想像力無限延伸的渡假島</div>
+				<div class="index_slogan_block" id="index_slogan_block_1"></div>
+				<div class="index_slogan_block" id="index_slogan_block_2"></div>
+				<div class="index_slogan_block" id="index_slogan_block_3"></div>
+				<div class="index_slogan_block" id="index_slogan_block_4"></div>
+				<div class="index_slogan_block" id="index_slogan_block_5"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	var controller = new ScrollMagic.Controller();
+//============================= slogan =============================//
+
+	var tween = new TimelineMax()
+					.to("#index_slogan_block_1", 1, {scale: 30, ease: Linear.easeNone}, 'slogan_block')
+					.to("#index_slogan_block_2", 1, {scale: 110, ease: Linear.easeNone}, 'slogan_block')
+					.to("#index_slogan_block_3", 1, {scale: 120, ease: Linear.easeNone}, 'slogan_block')
+					.to("#index_slogan_block_4", 1, {scale: 80, ease: Linear.easeNone}, 'slogan_block')
+					.to("#index_slogan_block_5", 1, {scale: 180, ease: Linear.easeNone}, 'slogan_block')
+					.to(".index_slogan_subscript", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_slogan_subscript')
+		 			.from(".index_slogan_subscript", 1, {top: "20px", ease: Linear.easeNone}, 'index_slogan_subscript')	
+					.to(".index_slogan_content", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_slogan_content')
+		 			.from(".index_slogan_content", 1, {top: "20px", ease: Linear.easeNone}, 'index_slogan_content')	
+
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_slogan", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);	
+					
+
+</script>

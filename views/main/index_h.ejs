@@ -1,0 +1,26 @@
+<section class="index_h index_color">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative;">
+				<div class="capital_quchi capital_quchi_h">H</div>
+				<div class="wrapper_quchi">
+					<div class="content_quchi" id="content_quchi_4">AND-MADE</div>
+					<div class="ch_quchi" id="ch_quchi_4">手作</div>
+				</div>	
+				<div class="details_quchi" id="details_quchi_4" style="border-bottom: 1px solid #000000;">
+					戶外攝影、電子電路、木工製作
+				</div>	
+			</div>
+		</div>
+	</div>
+</section>	
+<script>
+	var tween = new TimelineMax()	
+		.to("#content_quchi_4", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_h')
+		.to("#ch_quchi_4", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_h')
+		.to("#details_quchi_4", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_h')
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_h", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);		
+</script>

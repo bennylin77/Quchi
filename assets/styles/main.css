@@ -1,0 +1,459 @@
+body{
+    font-family: 'Microsoft JhengHei', 'Arial';  	
+}
+/*====================INDEX BEGIN==========================*/
+.parallax-slider{
+  -webkit-filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
+  filter: sepia(0.35) contrast(0.9) brightness(1.1) hue-rotate(-10deg) saturate(1.5);
+}
+.index_begin{
+	color: #ffffff;		
+}
+.index_begin_quchi_island{	
+	position: relative;
+}
+.index_begin_quchi{
+	position: relative;
+	font-size: 90px;
+	top: 35vh;
+	right:　200px;
+	visibility: hidden;
+}
+.index_begin_island{
+	position: relative;	
+	top: 37vh;	
+	font-size: 35px;	
+	letter-spacing: 5px;
+	border-bottom: 1px solid #ffffff;
+	width: 200px;
+}
+.index_begin_arrow{
+	position: absolute;		
+	top: 80vh;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+}
+.index_begin_circle{
+	position: absolute;		
+	top: 15vh;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;	
+}
+/*====================INDEX SLOGAN==========================*/
+.index_slogan{
+	background: #ffffff;
+	height: 100vh;
+}
+.index_slogan_image{
+	margin-top: 200px;
+	height: 180px;
+}
+.index_slogan_content{
+	visibility: hidden;
+	font-size: 40px;	
+	letter-spacing: 5px;
+	color: #000000;
+}
+.index_slogan_subscript{
+	position: relative;
+	visibility: hidden;
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: rgb(127, 127, 127);
+}
+.index_slogan_block{
+	position: absolute;
+	width: 1px;
+	height: 1px;	
+}
+#index_slogan_block_1{
+	top: 100px;	
+	left: 25%;		
+	background:  rgb(0, 210, 173);
+}
+#index_slogan_block_2{
+	top: 300px;	
+	left: 50px;	
+	background:  rgb(228, 159, 71);	
+}
+#index_slogan_block_3{
+	top: 600px;
+	left: 30%;
+	background:   rgb(213, 241, 138);
+}
+#index_slogan_block_4{
+	top: 550px;	
+	right: 15%;		
+	background:  rgb(218, 89, 22);
+}
+#index_slogan_block_5{
+	top: 200px;	
+	right: 10%;		
+	background:  rgb(237, 205, 155);	
+}
+/*====================INDEX CAMPUS==========================*/
+.index_campus{
+	background: #ffffff;
+	height: 100vh;
+}
+.index_campus_house_image{
+	top: 100px;
+	height: 200px;	
+}
+.index_campus_house_image_1{
+	position: absolute;	
+	left: 0px;	
+}
+
+.index_campus_house_image_2{
+	position: absolute;	
+	right: 0px;		
+}
+
+.index_campus_kindergarten_image{
+	position: absolute;
+	height: 180px;		
+	left: 0px;
+	top: 100px;
+}
+.index_campus_school_image{
+	position: absolute;
+	height: 180px;	
+	right: 0px;	
+	top: 100px;
+}
+
+.index_campus_block{
+	position: absolute;
+	width: 40px;
+	height: 40px;	
+	top: 60px;
+	left: 50%
+}
+#index_campus_block_1{
+	margin-left: 60px;
+	background:  rgb(0, 210, 173);
+}
+#index_campus_block_2{
+	margin-left: -60px;
+	background:  rgb(228, 159, 71);	
+}
+#index_campus_block_3{
+	margin-left: 20px;
+	background:  rgb(213, 241, 138);
+}
+#index_campus_block_4{
+	margin-left: -100px;
+	background:  rgb(218, 89, 22);
+}
+#index_campus_block_5{
+	margin-left: -20px;
+	background:  rgb(237, 205, 155);	
+}
+
+.index_campus_line {
+  position: absolute;
+  background-color: #000000;
+  top: 120px;
+}
+#index_campus_line_1{
+  right: 50%;  
+  height: 1px;
+}
+#index_campus_line_2{
+  left: 50%;
+  height: 1px;  
+}
+.index_campus_text{
+	top: 140px;
+	position: absolute;
+	font-size: 18px;
+	letter-spacing: 5px;
+	color: rgb(127, 127, 127);
+	visibility: hidden;	
+	left: 50%;
+	margin-left: -210px;
+	width: 450px;
+
+}
+/*====================INDEX QUCHI==========================*/
+.index_quchi_block{
+/* 	
+ 	background: rgba(0, 0, 0, 0.2);
+ 	height: 350px;
+ 	width: 580px;
+	position: absolute;
+	top: 32vh; 		
+	left: 50%;
+	margin-left: -290px;	
+*/
+}
+.index_quchi{
+	
+}
+
+.index_quchi_typo{
+	position: absolute;
+	width: 100px;
+	height: 100px;	
+	top: 38vh;
+	left: 50%;
+	font-size: 95px;
+	text-align: center;
+	font-family:Arial;
+	line-height: 100px; 
+}
+
+#index_quchi_typo_1{
+	margin-left: -225px;
+	color:  rgb(218, 89, 22);
+}
+#index_quchi_typo_2{
+	margin-left: -135px;
+	color:  rgb(228, 159, 71);	
+}
+#index_quchi_typo_3{
+	margin-left: -45px;
+	color:  rgb(237, 205, 155);	
+}
+#index_quchi_typo_4{
+	margin-left: 45px;
+	color:  rgb(213, 241, 138);
+}
+#index_quchi_typo_5{
+	margin-left: 120px;
+	color:  rgb(0, 210, 173);
+}
+
+
+.index_quchi_line {
+  position: absolute;
+  background-color: #000000;
+  top: 50vh;
+}
+#index_quchi_line_1{
+  right: 50%;  
+  height: 1px;
+}
+#index_quchi_line_2{
+  left: 50%;
+  height: 1px;  
+}
+.index_quchi_text{
+	top: 52vh;
+	position: absolute;
+	font-size: 18px;
+	letter-spacing: 5px;
+	color: #000000;
+	visibility: hidden;	
+	left: 50%;
+	margin-left: -210px;
+	width: 490px;
+
+}
+/*====================INDEX COLOR==========================*/
+.index_color{
+	
+}
+.index_color_black{
+	color: #000000;	
+}
+
+/*====================INDEX Q==========================*/
+.index_q{
+	background: rgb(218, 89, 22);
+	height: 450px;
+	color: #ffffff;
+}
+.capital_quchi{
+	position: absolute;
+	font-size: 185px;
+	font-family: 'Arial'; 
+}
+.wrapper_quchi{
+	position: absolute;
+	left: 185px;
+	letter-spacing: 5px;
+	font-size: 25px;	
+	top: 160px;
+}
+.content_quchi{
+	visibility: hidden;	
+	font-size: 140%;
+	font-family: 'Arial'; 	
+}
+.ch_quchi{
+	visibility: hidden;
+}
+.details_quchi{
+	visibility: hidden;	
+	position: absolute;
+	right: 0px;
+	top: 350px;
+	font-size: 20px;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #ffffff;	
+}
+/*====================INDEX U==========================*/
+.index_u{
+	background: rgb(228, 159, 71);
+	height: 450px;
+	color: #ffffff;
+	
+}
+/*====================INDEX C==========================*/
+.index_c{
+	background: rgb(237, 205, 155);
+	height: 450px;
+	color: #ffffff;
+}
+/*====================INDEX H==========================*/
+.index_h{
+	background: rgb(213, 241, 138);
+	height: 450px;
+	color: #000000;
+}
+/*====================INDEX I==========================*/
+.index_i{
+	background: rgb(0, 210, 173);
+	height: 450px;
+	color: #000000;
+}
+.capital_quchi_i{
+	left: 50px;
+}
+/*====================INDEX PROJECT==========================*/
+.index_project{
+	height: 100vh;
+	padding-top: 100px;
+	
+}
+.index_project_block{
+  visibility: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  
+  width: 100%;
+  height: 400px;
+}
+
+#index_project_block_1{
+
+}
+
+#index_project_block_2{
+
+}
+
+#index_project_block_3{
+
+}
+
+.index_project_name{
+  	position: relative;	
+	color: #ffffff;
+	top: 60%;
+	left: 5%;
+	font-size: 25px;
+	width: 80%;
+	letter-spacing: 10px;
+	border-bottom: 1px solid #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.index_project_section_image_container{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.index_project_section_image{
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background-attachment: scroll; 
+  background-position: center center;
+  background-size: cover;  
+  transition: all 1s; 
+  -moz-transition: all 1s; 
+  -webkit-transition: all 1s; 
+  -o-transition: all 1s;   
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    //background: rgba(33, 33, 33, 1);
+    //opacity: .4; 
+  }  
+}
+
+.no-touch .index_project_section_image:hover, 
+.no-touch .index_project_section_image_large:hover{ 
+  transform: scale(1.1); 
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  -o-transform: scale(1.1); 
+  -moz-transform: scale(1.1); 
+  &:before {
+    background: none;
+  }
+}
+.index_project_section_category_s{
+  font-size: 20px;  
+  margin-top: 5px;
+}
+
+.index_project_section_image span.overlay .index_project_section_category_s{
+  color: #ffffff;
+  font-size: 24px;  
+  position: absolute; top: 15%; left: 0%; width: 80%;
+  letter-spacing: 10px;
+  width: 45px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+/*
+  position: relative;	
+	color: #ffffff;
+	top: 60%;
+	left: 5%;
+	font-size: 25px;
+	width: 80%;
+	letter-spacing: 10px;
+	border-bottom: 1px solid #ffffff;
+*/
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+
+
+

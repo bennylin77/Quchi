@@ -1,0 +1,54 @@
+<div class="parallax-blossom" style="height: 100vh; width: 100%;">
+	<div class="container index_quchi" style=''>		
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10"  style="position: relative; height: 100vh;">				
+				<div class="index_quchi_block"></div>				
+				<div class="index_quchi_typo" id="index_quchi_typo_1">Q</div>
+				<div class="index_quchi_typo" id="index_quchi_typo_2">U</div>
+				<div class="index_quchi_typo" id="index_quchi_typo_3">C</div>
+				<div class="index_quchi_typo" id="index_quchi_typo_4">H</div>
+				<div class="index_quchi_typo" id="index_quchi_typo_5">I</div>	
+
+				
+				<div class="index_quchi_line"  id="index_quchi_line_1"></div>
+				<div class="index_quchi_line"  id="index_quchi_line_2"></div>	
+				<div class="index_quchi_text text-left">				
+				我們創造了，”屈尺教學模式”藉由系統化<br>
+				的教學模式，引導孩子們建立夢想中的『<br>
+				樂活渡假島』。<br>
+				</div>									
+			</div>
+		</div>
+	</div>	
+</div>
+<script>
+	//$('.parallax-blossom').parallax({imageSrc: '/images/background_bird.jpg'});
+	var controller = new ScrollMagic.Controller();
+
+//============================= quchi =============================//
+
+	var tween = new TimelineMax()	
+		 			//.from(".index_campus_kindergarten_image", 1, {top: "120px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			//.from(".index_campus_school_image", 1, {top: "120px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			//.from(".index_campus_kindergarten_image", 1, {left: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			//.from(".index_campus_school_image", 1, {right: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			//.from(".index_campus_house_image_1", 1, {top: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			//.from(".index_campus_house_image_2", 1, {top: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			//.from(".index_campus_house_image_1", 1, {left: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			//.from(".index_campus_house_image_2", 1, {right: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+					//.to("#index_campus_block_1", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					//.to("#index_campus_block_2", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					//.to("#index_campus_block_3", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					//.to("#index_campus_block_4", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					//.to("#index_campus_block_5", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 						 		
+			 		.fromTo("#index_quchi_line_1", 1, {width:0, ease: Linear.easeNone}, {width:'220px', ease: Linear.easeNone}, 'index_quchi_line')	  	 
+			 		.fromTo("#index_quchi_line_2", 1, {width:0, ease: Linear.easeNone}, {width:'220px', ease: Linear.easeNone}, 'index_quchi_line')						
+					.to(".index_quchi_text", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_quchi_text')
+		 			.from(".index_quchi_text", 1, {top: "20px", ease: Linear.easeNone}, 'index_quchi_text')	
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_quchi", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);	
+					
+
+</script>

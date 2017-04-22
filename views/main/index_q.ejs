@@ -1,0 +1,26 @@
+<section class="index_q index_color">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative;">
+				<div class="capital_quchi capital_quchi_q">Q</div>
+				<div class="wrapper_quchi">
+					<div class="content_quchi" id="content_quchi_1">UESTIONS</div>
+					<div class="ch_quchi" id="ch_quchi_1">問題導向</div>
+				</div>	
+				<div class="details_quchi" id="details_quchi_1">
+					學生起點、生活連結、專案探究
+				</div>	
+			</div>
+		</div>
+	</div>
+</section>	
+<script>
+	var tween = new TimelineMax()	
+		.to("#content_quchi_1", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_q')
+		.to("#ch_quchi_1", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_q')
+		.to("#details_quchi_1", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_q')
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_q", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);		
+</script>	

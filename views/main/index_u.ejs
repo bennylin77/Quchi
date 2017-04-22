@@ -1,0 +1,26 @@
+<section class="index_u index_color">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative;">
+				<div class="capital_quchi capital_quchi_u">U</div>
+				<div class="wrapper_quchi">
+					<div class="content_quchi" id="content_quchi_2">NIQUE</div>
+					<div class="ch_quchi" id="ch_quchi_2">獨特性</div>
+				</div>	
+				<div class="details_quchi" id="details_quchi_2">
+					在地特色、學科理論、遊戲應用
+				</div>	
+			</div>
+		</div>
+	</div>
+</section>	
+<script>
+	var tween = new TimelineMax()	
+		.to("#content_quchi_2", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_u')
+		.to("#ch_quchi_2", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_u')
+		.to("#details_quchi_2", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_u')
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_u", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);		
+</script>	

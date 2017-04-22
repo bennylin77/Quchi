@@ -1,0 +1,51 @@
+<div class="parallax-begin" style="height: 100vh; width: 100%; margin-top: -100px;">
+	<div class="container index_begin">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10 index_begin_quchi_island">				
+				<!--
+				<div class="index_begin_quchi">		
+					<span>屈</span>
+					<span>尺</span>
+					<span>國</span>
+					<span>小</span>										
+				</div>
+				<div class="index_begin_island"><em>樂活渡假島</em></div>
+				-->
+				<img src="/images/circle.png"  class="index_begin_circle">				
+				<a href="#index_slogan"><img src="/images/arrow_down.svg" class="index_begin_arrow"></a>
+			</div>
+		</div>
+	</div>	
+</div>
+<script>
+$('.parallax-begin').parallax({imageSrc: '/images/background_mountains.jpg'});
+
+
+	var controller = new ScrollMagic.Controller();
+//============================= slogan =============================//
+
+	var tween = new TimelineMax()
+					.to(".index_begin_quchi", 1, {autoAlpha: 1, ease: Linear.easeNone})
+	tween.timeScale(1) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".parallax-begin", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);	
+
+	tween = new TimelineLite()
+		 		.from(".index_begin_quchi", 1, {right: "120px", ease: Linear.easeNone})	
+	tween.timeScale(2) //play faster
+	var scene = new ScrollMagic.Scene({triggerElement: ".parallax-begin"})
+				  .setTween(tween)
+				  .addTo(controller) 
+//============================= click =============================//
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
+		var target = this.hash;
+		var $target = $(target);	
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+				//window.location.hash = target;
+		});
+	});
+</script>

@@ -1,0 +1,26 @@
+<section class="index_i index_color">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative;">
+				<div class="capital_quchi capital_quchi_i">I</div>
+				<div class="wrapper_quchi">
+					<div class="content_quchi" id="content_quchi_5">NTERAGTION</div>
+					<div class="ch_quchi" id="ch_quchi_5">整合性</div>
+				</div>	
+				<div class="details_quchi" id="details_quchi_5" style="border-bottom: 1px solid #000000;">
+					綠活圖、RPG遊戲、SCRATCH
+				</div>	
+			</div>
+		</div>
+	</div>
+</section>	
+<script>
+	var tween = new TimelineMax()	
+		.to("#content_quchi_5", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_i')
+		.to("#ch_quchi_5", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_i')
+		.to("#details_quchi_5", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_i')
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_i", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);		
+</script>

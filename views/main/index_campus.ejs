@@ -1,0 +1,64 @@
+<section class="index_campus">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative; height: 300px;">					
+				<img src="/images/campus/kindergarten.svg" class="index_campus_kindergarten_image">
+				<img src="/images/campus/school.svg" class="index_campus_school_image">		
+			</div>
+		</div>			
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative;  height: 200px;">					
+				
+				<div class="index_campus_block" id="index_campus_block_1"></div>
+				<div class="index_campus_block" id="index_campus_block_2"></div>
+				<div class="index_campus_block" id="index_campus_block_3"></div>
+				<div class="index_campus_block" id="index_campus_block_4"></div>
+				<div class="index_campus_block" id="index_campus_block_5"></div>
+				
+				<div class="index_campus_line"  id="index_campus_line_1"></div>
+				<div class="index_campus_line"  id="index_campus_line_2"></div>
+				
+				<div class="index_campus_text text-left">				
+				校方與家長會一同規劃一座以『屈尺國小』<br>
+				為本體 , 結合『屈尺社區』與『廣興社區』<br>
+				在地人文與生態資源的『樂活渡假島』。<br>
+				</div>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10" style="position: relative; height: 250px;">					
+				<img src="/images/campus/house.svg" class="index_campus_house_image index_campus_house_image_1">
+				<img src="/images/campus/house.svg" class="index_campus_house_image index_campus_house_image_2">
+			</div>
+		</div>		
+	</div>
+</section>
+<script>
+	var controller = new ScrollMagic.Controller();
+//============================= slogan =============================//
+
+	var tween = new TimelineMax()	
+		 			.from(".index_campus_kindergarten_image", 1, {top: "120px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			.from(".index_campus_school_image", 1, {top: "120px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			.from(".index_campus_kindergarten_image", 1, {left: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			.from(".index_campus_school_image", 1, {right: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			.from(".index_campus_house_image_1", 1, {top: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			.from(".index_campus_house_image_2", 1, {top: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			.from(".index_campus_house_image_1", 1, {left: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+		 			.from(".index_campus_house_image_2", 1, {right: "50px", ease: Linear.easeNone}, 'index_campus_image')	
+					.to("#index_campus_block_1", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					.to("#index_campus_block_2", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					.to("#index_campus_block_3", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					.to("#index_campus_block_4", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 			
+					.to("#index_campus_block_5", 3, {rotationY:360, transformOrigin:"left 50% -200"}, 'index_campus_block')			 						 		
+			 		.fromTo("#index_campus_line_1", 1, {width:0, ease: Linear.easeNone}, {width:'220px', ease: Linear.easeNone}, 'index_campus_line')	  	 
+			 		.fromTo("#index_campus_line_2", 1, {width:0, ease: Linear.easeNone}, {width:'220px', ease: Linear.easeNone}, 'index_campus_line')						
+					.to(".index_campus_text", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_campus_text')
+		 			.from(".index_campus_text", 1, {top: "20px", ease: Linear.easeNone}, 'index_campus_text')	
+	tween.timeScale(3) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_campus", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);	
+					
+
+</script>

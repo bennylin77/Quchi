@@ -1,0 +1,59 @@
+<section class="index_project">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4" style="position: relative;">							
+				<div class="index_project_section_image_container" id="index_project_block_1">
+					<a href='/projects' class='zoom'>
+			        	<div class="index_project_section_image" style="background-image: url('/images/project/project_catapult.png');">
+							<span class="overlay">
+								<div class="index_project_section_category_s">投石車</div>
+							</span>
+						</div>   
+					</a>
+				</div>			
+			</div>	
+			<div class="col-sm-4" style="position: relative;">								
+				<div class="index_project_section_image_container" id="index_project_block_3">
+					<a href='/projects' class='zoom'>
+			        	<div class="index_project_section_image" style="background-image: url('/images/project/project_pinball.jpg');">
+							<span class="overlay">
+								<div class="index_project_section_category_s">彈珠檯</div>
+							</span>
+						</div>   
+					</a>
+				</div>	
+			</div>
+			<div class="col-sm-4" style="position: relative;">								
+				<div class="index_project_section_image_container" id="index_project_block_2">
+					<a href='/projects' class='zoom'>
+			        	<div class="index_project_section_image" style="background-image: url('/images/project/project_horse.jpg');">
+							<span class="overlay">
+								<div class="index_project_section_category_s">搖搖馬</div>
+							</span>
+						</div>   
+					</a>
+				</div>					
+			</div>			
+		</div>		
+	</div>
+</section>
+
+<script>
+	var controller = new ScrollMagic.Controller();
+//============================= slogan =============================//
+
+	var tween = new TimelineMax()	
+					.to("#index_project_block_1", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_project')
+					.to("#index_project_block_2", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_project')
+					.to("#index_project_block_3", 1, {autoAlpha: 1, ease: Linear.easeNone}, 'index_project')		 			
+		 			.from("#index_project_block_1", 1, {top: "100px", ease: Linear.easeNone}, 'index_project')	
+		 			.from("#index_project_block_2", 1, {top: "140px", ease: Linear.easeNone}, 'index_project')	
+		 			.from("#index_project_block_3", 1, {top: "80px", ease: Linear.easeNone}, 'index_project')	
+	
+	tween.timeScale(2) //play faster 
+	var scene = new ScrollMagic.Scene({triggerElement: ".index_project", tweenChanges: true})
+					.setTween(tween)
+					.addTo(controller);	
+					
+
+</script>

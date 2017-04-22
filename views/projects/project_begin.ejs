@@ -1,0 +1,34 @@
+<section class="project_begin">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">				
+				<div class="project_begin_ch">島內設施</div>
+				<div class="project_begin_en">FACILITIES</div>
+				
+				
+				<div class="project_begin_block" id="project_begin_block_1"></div>
+				<div class="project_begin_block" id="project_begin_block_2"></div>
+				<div class="project_begin_block" id="project_begin_block_3"></div>
+				<div class="project_begin_block" id="project_begin_block_4"></div>
+				<div class="project_begin_block" id="project_begin_block_5"></div>				
+				
+				
+				<div class="project_begin_quote"><span style="font-size: 35px; font-family: PMingLiU; line-height: 40px;">“</span>對老師來說，這是一次充滿科技與歷史文化的精采教案  	孩子會記得用雙手與智慧創造出屬於自己的樂活島。<span style="font-size: 35px; font-family: PMingLiU; line-height: 40px;">”</span></div>	
+				<div class="project_begin_title">乃淳老師</div>					
+				<a href="#video-background"><img src="/images/arrow_down_project.svg" class="project_begin_arrow"></a>			
+			</div>
+		</div>
+	</div>	
+</section>
+<script>
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
+		var target = this.hash;
+		var $target = $(target);	
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+			}, 900, 'swing', function () {
+				//window.location.hash = target;
+		});
+	});
+</script>
